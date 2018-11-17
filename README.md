@@ -25,7 +25,7 @@ Note that the following params are all **mandatory**:
 
    - `edition` (possible values are `2015` and `2018`)
    - `channel` (possible values are `stable`, `beta`, `nightly`)
-   - `mode` (possible values are `debug` and `stable`)
+   - `mode` (possible values are `debug` and `release`)
    - `operation` (possible values are `run`, `build`, or `test`), and
    - `code` - your code goes here
 
