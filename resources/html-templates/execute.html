@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Rust Playground Clone</title>
+        <style>
+            fieldset {
+                margin: 5px 15px;
+                display: inline-block;
+            }
+
+            textarea {
+                width: 800px;
+                height: 600px;
+            }
+
+            #submit {
+                 height: 30px;
+                 width: 60px;
+                 padding: 2px;
+                 text-align: center;
+            }
+        </style>
+    </head>
+    <form action="/execute" method="post">
+        <div class="container">
+            <div class="compilation-options">
+                <fieldset>
+                    <legend>Compilation Options</legend>
+                    Channel:
+                    <select name="channel">
+                        <option value="stable">Stable</option>
+                        <option value="beta">Beta</option>
+                        <option value="nightly">Nightly</option>
+                    </select><br><br/>
+                    Mode:
+                    <input type="radio" name="mode" value="debug" checked/> Debug
+                    <input type="radio" name="mode" value="release"/> Release<br><br>
+                    Operation:
+                    <select name="operation">
+                        <option value="run">Run</option>
+                        <option value="build">Build</option>
+                        <option value="test">Test</option>
+                    </select><br><br>
+                    Edition:
+                    <input type="radio" name="edition" value="2015" checked/> 2015
+                    <input type="radio" name="edition" value="2018"/> 2018
+                </fieldset>
+            </div>
+            <div id="playground">
+                <fieldset>
+                    <legend>Playground</legend>
+                    <textarea id="code" name="code" placeholder="Enter some Rust code..."></textarea><br><br>
+                    <input type="submit" id="submit" value="submit"/>
+                </fieldset>
+            </div>
+        </div>
+    </form>
+</html>
+

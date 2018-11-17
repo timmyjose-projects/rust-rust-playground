@@ -1,6 +1,22 @@
 [package]
-name = "rust-rust-playground"
+name = "rust_rust_playground"
 version = "0.1.0"
-authors = ["Timmy Jose <timmy@nilenso.com>"]
+authors = ["Timmy Jose <timmy@gmail.com>"]
+edition = "2018"
 
 [dependencies]
+
+iron = "*"
+router = "*"
+urlencoded = "*"
+staticfile = "*"
+serde = "1.0.80"
+serde_json = "1.0"
+serde_derive = "1.0.80"
+config = "0.9"
+reqwest = "0.9.5"
+
+[dependencies.mount]
+
+git = "https://github.com/iron/mount.git"
+

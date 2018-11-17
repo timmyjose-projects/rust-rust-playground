@@ -1,7 +1,14 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
+extern crate config;
+extern crate iron;
+extern crate router;
+extern crate urlencoded;
+extern crate reqwest;
+
+#[macro_use]
+extern crate serde_derive;
+
+#[macro_use]
+extern crate serde_json;
+
+pub mod configuration;
+pub mod handlers;
